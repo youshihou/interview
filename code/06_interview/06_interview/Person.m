@@ -13,4 +13,10 @@
 
 @implementation Person
 
+- (void)setAge:(int)age {
+    _age = age;
+    
+    NSLog(@"%s", __func__);
+}
+
 @end

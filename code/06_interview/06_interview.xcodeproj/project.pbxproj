@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		03634C1A261AB90D00CEC2B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C19261AB90D00CEC2B2 /* main.m */; };
 		03634C23261AB92800CEC2B2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C22261AB92800CEC2B2 /* Person.m */; };
+		03634C28261ABE4500CEC2B2 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C27261ABE4500CEC2B2 /* Observer.m */; };
+		03634C2C261AC3C800CEC2B2 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C2B261AC3C800CEC2B2 /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		03634C19261AB90D00CEC2B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		03634C21261AB92800CEC2B2 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		03634C22261AB92800CEC2B2 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		03634C26261ABE4500CEC2B2 /* Observer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		03634C27261ABE4500CEC2B2 /* Observer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
+		03634C2A261AC3C800CEC2B2 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		03634C2B261AC3C800CEC2B2 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,12 @@
 		03634C18261AB90D00CEC2B2 /* 06_interview */ = {
 			isa = PBXGroup;
 			children = (
+				03634C2A261AC3C800CEC2B2 /* Test.h */,
+				03634C2B261AC3C800CEC2B2 /* Test.m */,
 				03634C21261AB92800CEC2B2 /* Person.h */,
 				03634C22261AB92800CEC2B2 /* Person.m */,
+				03634C26261ABE4500CEC2B2 /* Observer.h */,
+				03634C27261ABE4500CEC2B2 /* Observer.m */,
 				03634C19261AB90D00CEC2B2 /* main.m */,
 			);
 			path = 06_interview;
@@ -123,6 +133,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03634C28261ABE4500CEC2B2 /* Observer.m in Sources */,
+				03634C2C261AC3C800CEC2B2 /* Test.m in Sources */,
 				03634C23261AB92800CEC2B2 /* Person.m in Sources */,
 				03634C1A261AB90D00CEC2B2 /* main.m in Sources */,
 			);

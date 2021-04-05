@@ -32,23 +32,44 @@
 
 
 
-static const char NameKey;
-static const char WeightKey;
+//static const char NameKey;
+//static const char WeightKey;
+//
+//- (void)setName:(NSString *)name {
+//    objc_setAssociatedObject(self, &NameKey, name, OBJC_ASSOCIATION_COPY_NONATOMIC);
+//}
+//
+//- (NSString *)name {
+//    return objc_getAssociatedObject(self, &NameKey);
+//}
+//
+//- (void)setWeight:(int)weight {
+//    objc_setAssociatedObject(self, &WeightKey, @(weight), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//}
+//
+//- (int)weight {
+//    return [objc_getAssociatedObject(self, &WeightKey) intValue];
+//}
+
+
+
+#define NameKey @"name"
+#define WeightKey @"weight"
 
 - (void)setName:(NSString *)name {
-    objc_setAssociatedObject(self, &NameKey, name, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, NameKey, name, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (NSString *)name {
-    return objc_getAssociatedObject(self, &NameKey);
+    return objc_getAssociatedObject(self, NameKey);
 }
 
 - (void)setWeight:(int)weight {
-    objc_setAssociatedObject(self, &WeightKey, @(weight), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, WeightKey, @(weight), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (int)weight {
-    return [objc_getAssociatedObject(self, &WeightKey) intValue];
+    return [objc_getAssociatedObject(self, WeightKey) intValue];
 }
 
 

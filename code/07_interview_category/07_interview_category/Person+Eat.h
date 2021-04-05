@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)eat;
 + (void)eat2;
+- (void)run;
 
 @property (nonatomic, assign) int weight;
 @property (nonatomic, assign) double height;

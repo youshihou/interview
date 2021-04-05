@@ -17,8 +17,25 @@
 //    NSLog(@"%s", __func__);
 //}
 
-+ (BOOL)accessInstanceVariablesDirectly {
-    return YES;
-}
+// default return YES
+//+ (BOOL)accessInstanceVariablesDirectly {
+//    return YES;
+//}
+
+
+
+//- (void)willChangeValueForKey:(NSString *)key {
+//    [super willChangeValueForKey:key];
+//    
+//    NSLog(@"%s", __func__);
+//}
+//
+//- (void)didChangeValueForKey:(NSString *)key {
+//    NSLog(@"begin: %s", __func__);
+//
+//    [super didChangeValueForKey:key];
+//    
+//    NSLog(@"end: %s", __func__);
+//}
 
 @end

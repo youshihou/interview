@@ -53,23 +53,51 @@
 
 
 
-#define NameKey @"name"
-#define WeightKey @"weight"
+//#define NameKey @"name"
+//#define WeightKey @"weight"
+//
+//- (void)setName:(NSString *)name {
+//    objc_setAssociatedObject(self, NameKey, name, OBJC_ASSOCIATION_COPY_NONATOMIC);
+//}
+//
+//- (NSString *)name {
+//    return objc_getAssociatedObject(self, NameKey);
+//}
+//
+//- (void)setWeight:(int)weight {
+//    objc_setAssociatedObject(self, WeightKey, @(weight), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//}
+//
+//- (int)weight {
+//    return [objc_getAssociatedObject(self, WeightKey) intValue];
+//}
+
+
+
+
 
 - (void)setName:(NSString *)name {
-    objc_setAssociatedObject(self, NameKey, name, OBJC_ASSOCIATION_COPY_NONATOMIC);
+//    NSLog(@"%@ - %@", self, NSStringFromSelector(_cmd));
+    objc_setAssociatedObject(self, @selector(name), name, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (NSString *)name {
-    return objc_getAssociatedObject(self, NameKey);
+//    return objc_getAssociatedObject(self, @selector(name));
+    
+//    NSLog(@"%@ - %@", self, NSStringFromSelector(_cmd));
+//    _cmd = @selector(name);
+    return objc_getAssociatedObject(self, _cmd);
 }
 
 - (void)setWeight:(int)weight {
-    objc_setAssociatedObject(self, WeightKey, @(weight), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(weight), @(weight), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (int)weight {
-    return [objc_getAssociatedObject(self, WeightKey) intValue];
+//    return [objc_getAssociatedObject(self, @selector(weight)) intValue];
+    
+//    _cmd = @selector(weight);
+    return [objc_getAssociatedObject(self, _cmd) intValue];
 }
 
 

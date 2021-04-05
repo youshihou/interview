@@ -9,4 +9,8 @@
 
 @implementation Student (Test1)
 
++ (void)load {
+    NSLog(@"%s", __func__);
+}
+
 @end

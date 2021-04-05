@@ -9,4 +9,8 @@
 
 @implementation Dog
 
++ (void)load {
+    NSLog(@"%s", __func__);
+}
+
 @end

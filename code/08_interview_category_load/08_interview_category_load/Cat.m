@@ -9,4 +9,8 @@
 
 @implementation Cat
 
++ (void)load {
+    NSLog(@"%s", __func__);
+}
+
 @end

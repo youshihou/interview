@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		03634C63261B09B700CEC2B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C62261B09B700CEC2B2 /* main.m */; };
+		03634C6C261B0A1B00CEC2B2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C6B261B0A1B00CEC2B2 /* Person.m */; };
+		03634C70261B0A2700CEC2B2 /* Person+Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C6F261B0A2700CEC2B2 /* Person+Test1.m */; };
+		03634C74261B0A2F00CEC2B2 /* Person+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C73261B0A2F00CEC2B2 /* Person+Test2.m */; };
+		03634C78261B0AAC00CEC2B2 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C77261B0AAC00CEC2B2 /* Student.m */; };
+		03634C7C261B0ACC00CEC2B2 /* Student+Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C7B261B0ACC00CEC2B2 /* Student+Test1.m */; };
+		03634C81261B0AD600CEC2B2 /* Student+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C80261B0AD600CEC2B2 /* Student+Test2.m */; };
+		03634C85261B1BF500CEC2B2 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C84261B1BF500CEC2B2 /* Dog.m */; };
+		03634C89261B1C0200CEC2B2 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C88261B1C0200CEC2B2 /* Cat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,22 @@
 /* Begin PBXFileReference section */
 		03634C5F261B09B700CEC2B2 /* 08_interview_category_load */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08_interview_category_load; sourceTree = BUILT_PRODUCTS_DIR; };
 		03634C62261B09B700CEC2B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03634C6A261B0A1B00CEC2B2 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		03634C6B261B0A1B00CEC2B2 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		03634C6E261B0A2700CEC2B2 /* Person+Test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Test1.h"; sourceTree = "<group>"; };
+		03634C6F261B0A2700CEC2B2 /* Person+Test1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Test1.m"; sourceTree = "<group>"; };
+		03634C72261B0A2F00CEC2B2 /* Person+Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Test2.h"; sourceTree = "<group>"; };
+		03634C73261B0A2F00CEC2B2 /* Person+Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Test2.m"; sourceTree = "<group>"; };
+		03634C76261B0AAC00CEC2B2 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		03634C77261B0AAC00CEC2B2 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		03634C7A261B0ACC00CEC2B2 /* Student+Test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+Test1.h"; sourceTree = "<group>"; };
+		03634C7B261B0ACC00CEC2B2 /* Student+Test1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+Test1.m"; sourceTree = "<group>"; };
+		03634C7F261B0AD600CEC2B2 /* Student+Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+Test2.h"; sourceTree = "<group>"; };
+		03634C80261B0AD600CEC2B2 /* Student+Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+Test2.m"; sourceTree = "<group>"; };
+		03634C83261B1BF500CEC2B2 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		03634C84261B1BF500CEC2B2 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		03634C87261B1C0200CEC2B2 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		03634C88261B1C0200CEC2B2 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +82,22 @@
 			isa = PBXGroup;
 			children = (
 				03634C62261B09B700CEC2B2 /* main.m */,
+				03634C6A261B0A1B00CEC2B2 /* Person.h */,
+				03634C6B261B0A1B00CEC2B2 /* Person.m */,
+				03634C6E261B0A2700CEC2B2 /* Person+Test1.h */,
+				03634C6F261B0A2700CEC2B2 /* Person+Test1.m */,
+				03634C72261B0A2F00CEC2B2 /* Person+Test2.h */,
+				03634C73261B0A2F00CEC2B2 /* Person+Test2.m */,
+				03634C76261B0AAC00CEC2B2 /* Student.h */,
+				03634C77261B0AAC00CEC2B2 /* Student.m */,
+				03634C7A261B0ACC00CEC2B2 /* Student+Test1.h */,
+				03634C7B261B0ACC00CEC2B2 /* Student+Test1.m */,
+				03634C7F261B0AD600CEC2B2 /* Student+Test2.h */,
+				03634C80261B0AD600CEC2B2 /* Student+Test2.m */,
+				03634C83261B1BF500CEC2B2 /* Dog.h */,
+				03634C84261B1BF500CEC2B2 /* Dog.m */,
+				03634C87261B1C0200CEC2B2 /* Cat.h */,
+				03634C88261B1C0200CEC2B2 /* Cat.m */,
 			);
 			path = 08_interview_category_load;
 			sourceTree = "<group>";
@@ -118,6 +158,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03634C85261B1BF500CEC2B2 /* Dog.m in Sources */,
+				03634C89261B1C0200CEC2B2 /* Cat.m in Sources */,
+				03634C70261B0A2700CEC2B2 /* Person+Test1.m in Sources */,
+				03634C81261B0AD600CEC2B2 /* Student+Test2.m in Sources */,
+				03634C74261B0A2F00CEC2B2 /* Person+Test2.m in Sources */,
+				03634C7C261B0ACC00CEC2B2 /* Student+Test1.m in Sources */,
+				03634C78261B0AAC00CEC2B2 /* Student.m in Sources */,
+				03634C6C261B0A1B00CEC2B2 /* Person.m in Sources */,
 				03634C63261B09B700CEC2B2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

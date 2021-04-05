@@ -12,7 +12,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Observer *observer = [[Observer alloc] init];
+//        Observer *observer = [[Observer alloc] init];
 //        
 //        Person *person = [[Person alloc] init];
 //        person.age = 1;
@@ -36,17 +36,24 @@ int main(int argc, const char * argv[]) {
         
         Test *test = [[Test alloc] init];
         
-        // KVO
-        NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
-        [test addObserver:observer forKeyPath:@"age" options:options context:@"666"];
-
-        // KVC
-        [test setValue:@10 forKey:@"age"];
-
-        [test removeObserver:observer forKeyPath:@"age"];
-
-        NSLog(@"-------");
+//        // KVO
+//        NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
+//        [test addObserver:observer forKeyPath:@"age" options:options context:@"666"];
+//
+//        // KVC
+//        [test setValue:@10 forKey:@"age"];
+//
+//        [test removeObserver:observer forKeyPath:@"age"];
+//
+//        NSLog(@"-------------------------------");
     
+        
+        
+        test->_age = 10;
+        test->_isAge = 11;
+        test->age = 12;
+        test->isAge = 13;
+        NSLog(@"%@", [test valueForKey:@"age"]);
     }
     return 0;
 }

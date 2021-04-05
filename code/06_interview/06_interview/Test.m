@@ -26,7 +26,7 @@
 
 //- (void)willChangeValueForKey:(NSString *)key {
 //    [super willChangeValueForKey:key];
-//    
+//
 //    NSLog(@"%s", __func__);
 //}
 //
@@ -34,8 +34,27 @@
 //    NSLog(@"begin: %s", __func__);
 //
 //    [super didChangeValueForKey:key];
-//    
+//
 //    NSLog(@"end: %s", __func__);
+//}
+
+
+
+
+//- (int)getAge {
+//    return 11;
+//}
+//
+//- (int)age {
+//    return 12;
+//}
+//
+//- (int)isAge {
+//    return 13;
+//}
+//
+//- (int)_age {
+//    return 14;
 //}
 
 @end

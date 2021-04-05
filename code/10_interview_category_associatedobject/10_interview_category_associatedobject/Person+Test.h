@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Person (Test)
 
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, assign) int weight;
+
 @end
 
 NS_ASSUME_NONNULL_END

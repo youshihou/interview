@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		03634CD5261B525500CEC2B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634CD4261B525500CEC2B2 /* main.m */; };
+		03634CDE261B526A00CEC2B2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634CDD261B526A00CEC2B2 /* Person.m */; };
+		03634CE2261B528500CEC2B2 /* Person+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634CE1261B528500CEC2B2 /* Person+Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		03634CD1261B525500CEC2B2 /* 10_interview_category_associatedobject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 10_interview_category_associatedobject; sourceTree = BUILT_PRODUCTS_DIR; };
 		03634CD4261B525500CEC2B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03634CDC261B526A00CEC2B2 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		03634CDD261B526A00CEC2B2 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		03634CE0261B528500CEC2B2 /* Person+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Test.h"; sourceTree = "<group>"; };
+		03634CE1261B528500CEC2B2 /* Person+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Test.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				03634CD4261B525500CEC2B2 /* main.m */,
+				03634CDC261B526A00CEC2B2 /* Person.h */,
+				03634CDD261B526A00CEC2B2 /* Person.m */,
+				03634CE0261B528500CEC2B2 /* Person+Test.h */,
+				03634CE1261B528500CEC2B2 /* Person+Test.m */,
 			);
 			path = 10_interview_category_associatedobject;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03634CE2261B528500CEC2B2 /* Person+Test.m in Sources */,
+				03634CDE261B526A00CEC2B2 /* Person.m in Sources */,
 				03634CD5261B525500CEC2B2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

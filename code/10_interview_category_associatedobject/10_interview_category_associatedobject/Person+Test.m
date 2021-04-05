@@ -8,8 +8,8 @@
 #import "Person+Test.h"
 #import <objc/runtime.h>
 
-const void *NameKey = &NameKey;
-const void *WeightKey = &WeightKey;
+static const void *NameKey = &NameKey;
+static const void *WeightKey = &WeightKey;
 
 @implementation Person (Test)
 

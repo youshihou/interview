@@ -6,11 +6,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
+#import "Student.h"
+#import "Teacher.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+//        [Person alloc];
+//        [Student alloc];
+        
+        
+        [Student alloc];
+        [Teacher alloc];
     }
     return 0;
 }

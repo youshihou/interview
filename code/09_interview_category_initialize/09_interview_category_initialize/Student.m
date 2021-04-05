@@ -9,4 +9,8 @@
 
 @implementation Student
 
+//+ (void)initialize {
+//    NSLog(@"%s", __func__);
+//}
+
 @end

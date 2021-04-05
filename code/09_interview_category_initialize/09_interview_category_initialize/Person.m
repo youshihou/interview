@@ -9,4 +9,12 @@
 
 @implementation Person
 
++ (void)initialize {
+//    if (self == [<#ClassName#> class]) {
+//        <#statements#>
+//    }
+    
+    NSLog(@"%s", __func__);
+}
+
 @end

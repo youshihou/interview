@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		03634C9C261B335E00CEC2B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634C9B261B335E00CEC2B2 /* main.m */; };
+		03634CA5261B338700CEC2B2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634CA4261B338700CEC2B2 /* Person.m */; };
+		03634CA9261B33FF00CEC2B2 /* Person+Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634CA8261B33FF00CEC2B2 /* Person+Test1.m */; };
+		03634CAD261B341000CEC2B2 /* Person+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634CAC261B341000CEC2B2 /* Person+Test2.m */; };
+		03634CB1261B342600CEC2B2 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634CB0261B342600CEC2B2 /* Student.m */; };
+		03634CB5261B343A00CEC2B2 /* Student+Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634CB4261B343A00CEC2B2 /* Student+Test1.m */; };
+		03634CB9261B344200CEC2B2 /* Student+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634CB8261B344200CEC2B2 /* Student+Test2.m */; };
+		03634CBD261B346B00CEC2B2 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634CBC261B346B00CEC2B2 /* Dog.m */; };
+		03634CC1261B347600CEC2B2 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634CC0261B347600CEC2B2 /* Cat.m */; };
+		03634CC6261B441300CEC2B2 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634CC5261B441300CEC2B2 /* Teacher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +34,24 @@
 /* Begin PBXFileReference section */
 		03634C98261B335E00CEC2B2 /* 09_interview_category_initialize */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 09_interview_category_initialize; sourceTree = BUILT_PRODUCTS_DIR; };
 		03634C9B261B335E00CEC2B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03634CA3261B338700CEC2B2 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		03634CA4261B338700CEC2B2 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		03634CA7261B33FF00CEC2B2 /* Person+Test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Test1.h"; sourceTree = "<group>"; };
+		03634CA8261B33FF00CEC2B2 /* Person+Test1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Test1.m"; sourceTree = "<group>"; };
+		03634CAB261B341000CEC2B2 /* Person+Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Test2.h"; sourceTree = "<group>"; };
+		03634CAC261B341000CEC2B2 /* Person+Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Test2.m"; sourceTree = "<group>"; };
+		03634CAF261B342600CEC2B2 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		03634CB0261B342600CEC2B2 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		03634CB3261B343A00CEC2B2 /* Student+Test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+Test1.h"; sourceTree = "<group>"; };
+		03634CB4261B343A00CEC2B2 /* Student+Test1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+Test1.m"; sourceTree = "<group>"; };
+		03634CB7261B344200CEC2B2 /* Student+Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+Test2.h"; sourceTree = "<group>"; };
+		03634CB8261B344200CEC2B2 /* Student+Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+Test2.m"; sourceTree = "<group>"; };
+		03634CBB261B346B00CEC2B2 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		03634CBC261B346B00CEC2B2 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		03634CBF261B347600CEC2B2 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		03634CC0261B347600CEC2B2 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		03634CC4261B441300CEC2B2 /* Teacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		03634CC5261B441300CEC2B2 /* Teacher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +85,24 @@
 			isa = PBXGroup;
 			children = (
 				03634C9B261B335E00CEC2B2 /* main.m */,
+				03634CA3261B338700CEC2B2 /* Person.h */,
+				03634CA4261B338700CEC2B2 /* Person.m */,
+				03634CA7261B33FF00CEC2B2 /* Person+Test1.h */,
+				03634CA8261B33FF00CEC2B2 /* Person+Test1.m */,
+				03634CAB261B341000CEC2B2 /* Person+Test2.h */,
+				03634CAC261B341000CEC2B2 /* Person+Test2.m */,
+				03634CAF261B342600CEC2B2 /* Student.h */,
+				03634CB0261B342600CEC2B2 /* Student.m */,
+				03634CB3261B343A00CEC2B2 /* Student+Test1.h */,
+				03634CB4261B343A00CEC2B2 /* Student+Test1.m */,
+				03634CB7261B344200CEC2B2 /* Student+Test2.h */,
+				03634CB8261B344200CEC2B2 /* Student+Test2.m */,
+				03634CC4261B441300CEC2B2 /* Teacher.h */,
+				03634CC5261B441300CEC2B2 /* Teacher.m */,
+				03634CBB261B346B00CEC2B2 /* Dog.h */,
+				03634CBC261B346B00CEC2B2 /* Dog.m */,
+				03634CBF261B347600CEC2B2 /* Cat.h */,
+				03634CC0261B347600CEC2B2 /* Cat.m */,
 			);
 			path = 09_interview_category_initialize;
 			sourceTree = "<group>";
@@ -118,6 +163,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03634CA9261B33FF00CEC2B2 /* Person+Test1.m in Sources */,
+				03634CAD261B341000CEC2B2 /* Person+Test2.m in Sources */,
+				03634CBD261B346B00CEC2B2 /* Dog.m in Sources */,
+				03634CC1261B347600CEC2B2 /* Cat.m in Sources */,
+				03634CB1261B342600CEC2B2 /* Student.m in Sources */,
+				03634CA5261B338700CEC2B2 /* Person.m in Sources */,
+				03634CB9261B344200CEC2B2 /* Student+Test2.m in Sources */,
+				03634CB5261B343A00CEC2B2 /* Student+Test1.m in Sources */,
+				03634CC6261B441300CEC2B2 /* Teacher.m in Sources */,
 				03634C9C261B335E00CEC2B2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,4 +9,8 @@
 
 @implementation Person (Test1)
 
++ (void)initialize {
+    NSLog(@"%s", __func__);
+}
+
 @end

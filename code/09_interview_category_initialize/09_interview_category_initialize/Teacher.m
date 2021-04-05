@@ -9,4 +9,8 @@
 
 @implementation Teacher
 
+//+ (void)initialize {
+//    NSLog(@"%s", __func__);
+//}
+
 @end

@@ -21,21 +21,44 @@
 
 
 
-int age_ = 10;
-static int height_ = 20;
+//int age_ = 10;
+//static int height_ = 20;
+//
+//
+//void test() {
+//    //        test();
+//    //        block();
+//
+//
+//    void(^block)(void) = ^() {
+//        NSLog(@"Hello, World! %d %d", age_, height_);
+//    };
+//    age_ = 20;
+//    height_ = 30;
+//    block();
+//}
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-//        test();
-//        block();
-        
 
-        void(^block)(void) = ^() {
-            NSLog(@"Hello, World! %d %d", age_, height_);
+        void(^block1)(void) = ^() {
+            NSLog(@"Hello, World!");
         };
-        age_ = 20;
-        height_ = 30;
-        block();
+        int a = 10;
+        void(^block2)(void) = ^() {
+            NSLog(@"Hello, World! %d", a);
+        };
+
+        // __NSGlobalBlock__ NSBlock NSObject
+        NSLog(@"%@ %@ %@", [block1 class], [[block1 class] superclass], [[[block1 class] superclass] superclass]);
+        
+        
+        // __NSGlobalBlock__ __NSMallocBlock__ __NSStackBlock__
+        NSLog(@"%@ %@ %@", [block1 class], [block2 class], [^{
+            NSLog(@"%d", a);
+        } class]);
+
     }
     return 0;
 }

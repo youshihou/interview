@@ -14,6 +14,7 @@
 		03634D8D261C65A300CEC2B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03634D8C261C65A300CEC2B2 /* Assets.xcassets */; };
 		03634D90261C65A300CEC2B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03634D8E261C65A300CEC2B2 /* LaunchScreen.storyboard */; };
 		03634D93261C65A300CEC2B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634D92261C65A300CEC2B2 /* main.m */; };
+		03634D9C261C65BE00CEC2B2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634D9B261C65BE00CEC2B2 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		03634D8F261C65A300CEC2B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03634D91261C65A300CEC2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03634D92261C65A300CEC2B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03634D9A261C65BE00CEC2B2 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		03634D9B261C65BE00CEC2B2 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 		03634D7F261C659E00CEC2B2 /* 13_interview_block_auto_object */ = {
 			isa = PBXGroup;
 			children = (
+				03634D9A261C65BE00CEC2B2 /* Person.h */,
+				03634D9B261C65BE00CEC2B2 /* Person.m */,
 				03634D80261C659E00CEC2B2 /* AppDelegate.h */,
 				03634D81261C659E00CEC2B2 /* AppDelegate.m */,
 				03634D83261C659E00CEC2B2 /* SceneDelegate.h */,
@@ -147,6 +152,7 @@
 			files = (
 				03634D88261C659E00CEC2B2 /* ViewController.m in Sources */,
 				03634D82261C659E00CEC2B2 /* AppDelegate.m in Sources */,
+				03634D9C261C65BE00CEC2B2 /* Person.m in Sources */,
 				03634D93261C65A300CEC2B2 /* main.m in Sources */,
 				03634D85261C659E00CEC2B2 /* SceneDelegate.m in Sources */,
 			);

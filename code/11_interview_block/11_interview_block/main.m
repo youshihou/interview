@@ -77,9 +77,32 @@ Block myblock() {
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
-        Block block = myblock();
-        block();
-        NSLog(@"%@", [block class]);
+//        Block block = myblock();
+//        block();
+//        NSLog(@"%@", [block class]); // __NSMallocBlock__
+        
+        
+        
+        
+        
+//        int a = 10;
+//        Block block = ^{
+//            NSLog(@"Hello, World! %d", a);
+//        };
+//        NSLog(@"%@", [block class]); // __NSMallocBlock__
+        
+        
+        
+        
+        NSLog(@"%@", [^{
+            NSLog(@"Hello, World!");
+        } class]); // __NSGlobalBlock__
+        
+        int a = 10;
+        NSLog(@"%@", [^{
+            NSLog(@"Hello, World! %d", a);
+        } class]); // __NSStackBlock__
+        
     }
     return 0;
 }

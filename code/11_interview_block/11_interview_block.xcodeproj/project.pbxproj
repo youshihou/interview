@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03634D4C261BF5E700CEC2B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634D4B261BF5E700CEC2B2 /* main.m */; };
+		03634D57261C25B000CEC2B2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 03634D56261C25B000CEC2B2 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,9 @@
 		03634D48261BF5E700CEC2B2 /* 11_interview_block */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 11_interview_block; sourceTree = BUILT_PRODUCTS_DIR; };
 		03634D4B261BF5E700CEC2B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		03634D53261BF7DE00CEC2B2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		03634D55261C25B000CEC2B2 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		03634D56261C25B000CEC2B2 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		03634D59261C262E00CEC2B2 /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,11 @@
 		03634D4A261BF5E700CEC2B2 /* 11_interview_block */ = {
 			isa = PBXGroup;
 			children = (
-				03634D4B261BF5E700CEC2B2 /* main.m */,
 				03634D53261BF7DE00CEC2B2 /* main.cpp */,
+				03634D4B261BF5E700CEC2B2 /* main.m */,
+				03634D55261C25B000CEC2B2 /* Person.h */,
+				03634D56261C25B000CEC2B2 /* Person.m */,
+				03634D59261C262E00CEC2B2 /* Person.cpp */,
 			);
 			path = 11_interview_block;
 			sourceTree = "<group>";
@@ -120,6 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03634D57261C25B000CEC2B2 /* Person.m in Sources */,
 				03634D4C261BF5E700CEC2B2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

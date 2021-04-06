@@ -9,4 +9,11 @@
 
 @implementation Person
 
+- (void)test {
+    void(^block)(void) = ^() {
+        NSLog(@"-----------%p", self);
+    };
+    block();
+}
+
 @end

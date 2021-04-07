@@ -29,6 +29,7 @@
 		03F741EB261D4EC200557F22 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		03F741EC261D4EC200557F22 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		03F741EF261D505000557F22 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		03F741F1261DC6B100557F22 /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,7 @@
 				03F741E3261D4EB500557F22 /* main.m */,
 				03F741EB261D4EC200557F22 /* Person.h */,
 				03F741EC261D4EC200557F22 /* Person.m */,
+				03F741F1261DC6B100557F22 /* Person.cpp */,
 			);
 			path = 16_interview_block_cyclereference;
 			sourceTree = "<group>";

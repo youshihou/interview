@@ -19,7 +19,7 @@
 
 #define TallMask (1<<0) //1
 #define RichMask (1<<1)
-#define HondsomeMask (1<<2)
+#define HandsomeMask (1<<2)
 
 
 @interface Person () {
@@ -44,15 +44,27 @@
 }
 
 - (void)setTall:(BOOL)tall {
-    
+    if (tall) {
+        _tallRichHandsome |= TallMask;
+    } else {
+        _tallRichHandsome &= ~TallMask;
+    }
 }
 
 - (void)setRich:(BOOL)rich {
-    
+    if (rich) {
+        _tallRichHandsome |= RichMask;
+    } else {
+        _tallRichHandsome &= ~RichMask;
+    }
 }
 
 - (void)setHandsome:(BOOL)handsome {
-    
+    if (handsome) {
+        _tallRichHandsome |= HandsomeMask;
+    } else {
+        _tallRichHandsome &= ~HandsomeMask;
+    }
 }
 
 - (BOOL)isTall {
@@ -67,7 +79,7 @@
 
 - (BOOL)isHandsome {
 //    return !!(_tallRichHandsome & 4);
-    return !!(_tallRichHandsome & HondsomeMask);
+    return !!(_tallRichHandsome & HandsomeMask);
 }
 
 @end

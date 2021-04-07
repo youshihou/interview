@@ -15,6 +15,9 @@ int main(int argc, const char * argv[]) {
 //        [p test];
 //        NSLog(@"%zd", class_getInstanceSize([p class]));
         
+        p.tall = YES;
+        p.rich = NO;
+        p.handsome = NO;
         NSLog(@"%d %d %d", p.isTall, p.isRich, p.isHandsome);
     }
     return 0;

@@ -14,8 +14,11 @@
 }
 
 - (void)test {
+//    __weak Person *weakSelf = self;
+    __weak typeof(self) weakSelf = self;
+//    __unsafe_unretained typeof(self) weakSelf = self;
     self.block = ^{
-        NSLog(@"%d", self.age);
+        NSLog(@"%d", weakSelf.age);
     };
 }
 

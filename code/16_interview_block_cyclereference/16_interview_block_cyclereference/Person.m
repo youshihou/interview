@@ -9,4 +9,14 @@
 
 @implementation Person
 
+- (void)dealloc {
+    NSLog(@"%s", __func__);
+}
+
+- (void)test {
+    self.block = ^{
+        NSLog(@"%d", self.age);
+    };
+}
+
 @end

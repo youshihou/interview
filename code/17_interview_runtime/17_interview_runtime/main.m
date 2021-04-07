@@ -6,11 +6,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
+#import <objc/runtime.h>
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Person *p = [[Person alloc] init];
+//        [p test];
+//        NSLog(@"%zd", class_getInstanceSize([p class]));
+        
+        NSLog(@"%d %d %d", p.isTall, p.isRich, p.isHandsome);
     }
     return 0;
 }

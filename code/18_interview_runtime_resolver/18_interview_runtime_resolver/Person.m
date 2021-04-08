@@ -38,4 +38,12 @@ void c_other(id self, SEL _cmd) {
     return [super resolveInstanceMethod:sel];
 }
 
++ (BOOL)resolveClassMethod:(SEL)sel {
+    if (@selector(test) == sel) {
+        class_addMethod(object_getClass(self), sel, (IMP)c_other, "v16@0:8");
+        return YES;
+    }
+    return [super resolveClassMethod:sel];
+}
+
 @end

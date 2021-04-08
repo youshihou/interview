@@ -13,4 +13,12 @@
     return age * 2;
 }
 
+- (void)test {
+    NSLog(@"%s", __func__);
+}
+
++ (void)test {
+    NSLog(@"%s", __func__);
+}
+
 @end

@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)test;
 - (int)test:(int)age;
 
++ (void)test;
+
 @end
 
 NS_ASSUME_NONNULL_END

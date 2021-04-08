@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		03F74231261F017000557F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F74230261F017000557F22 /* main.m */; };
+		03F7423A261F17E800557F22 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F74239261F17E800557F22 /* Person.m */; };
+		03F7423E261F19E100557F22 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7423D261F19E100557F22 /* Cat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		03F7422D261F017000557F22 /* 19_interview_runtime_forward */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 19_interview_runtime_forward; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F74230261F017000557F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03F74238261F17E800557F22 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		03F74239261F17E800557F22 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		03F7423C261F19E100557F22 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		03F7423D261F19E100557F22 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				03F74230261F017000557F22 /* main.m */,
+				03F74238261F17E800557F22 /* Person.h */,
+				03F74239261F17E800557F22 /* Person.m */,
+				03F7423C261F19E100557F22 /* Cat.h */,
+				03F7423D261F19E100557F22 /* Cat.m */,
 			);
 			path = 19_interview_runtime_forward;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F7423E261F19E100557F22 /* Cat.m in Sources */,
+				03F7423A261F17E800557F22 /* Person.m in Sources */,
 				03F74231261F017000557F22 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

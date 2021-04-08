@@ -9,4 +9,8 @@
 
 @implementation Cat
 
+- (void)test {
+    NSLog(@"%s", __func__);
+}
+
 @end

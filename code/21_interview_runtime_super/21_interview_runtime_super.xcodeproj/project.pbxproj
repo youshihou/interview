@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		03F74265261F424500557F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F74264261F424500557F22 /* main.m */; };
+		03F7426E261F425400557F22 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7426D261F425400557F22 /* Person.m */; };
+		03F74272261F428300557F22 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F74271261F428300557F22 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		03F74261261F424500557F22 /* 21_interview_runtime_super */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 21_interview_runtime_super; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F74264261F424500557F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03F7426C261F425400557F22 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		03F7426D261F425400557F22 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		03F74270261F428300557F22 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		03F74271261F428300557F22 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		03F74274261F449700557F22 /* Student.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				03F74264261F424500557F22 /* main.m */,
+				03F7426C261F425400557F22 /* Person.h */,
+				03F7426D261F425400557F22 /* Person.m */,
+				03F74270261F428300557F22 /* Student.h */,
+				03F74271261F428300557F22 /* Student.m */,
+				03F74274261F449700557F22 /* Student.cpp */,
 			);
 			path = 21_interview_runtime_super;
 			sourceTree = "<group>";
@@ -118,7 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F7426E261F425400557F22 /* Person.m in Sources */,
 				03F74265261F424500557F22 /* main.m in Sources */,
+				03F74272261F428300557F22 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

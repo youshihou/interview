@@ -10,25 +10,26 @@
 
 //#define TallMask 1
 //#define RichMask 2
-//#define HondsomeMask 4
+//#define HandsomeMask 4
 
 //#define TallMask 0b00000001
 //#define RichMask 0b00000010
-//#define HondsomeMask 0b00000100
+//#define HandsomeMask 0b00000100
 
 
-//#define TallMask (1<<0) //1
-//#define RichMask (1<<1)
-//#define HandsomeMask (1<<2)
-
+#define TallMask (1<<0) //1
+#define RichMask (1<<1)
+#define HandsomeMask (1<<2)
 
 @interface Person () {
-    struct _tallRichHandsome {
-        char tall : 1;
-        char rich : 1;
-        char handsome : 1;
+    union _tallRichHandsome {
+        char bits;
+        struct {
+            char tall : 1;
+            char rich : 1;
+            char handsome : 1;
+        };
     } _tallRichHandsome;
-
 }
 
 
@@ -37,30 +38,95 @@
 @implementation Person
 
 - (void)setTall:(BOOL)tall {
-    _tallRichHandsome.tall = tall;
+    if (tall) {
+        _tallRichHandsome.bits |= TallMask;
+    } else {
+        _tallRichHandsome.bits &= ~TallMask;
+    }
 }
 
 - (void)setRich:(BOOL)rich {
-    _tallRichHandsome.rich = rich;
+    if (rich) {
+        _tallRichHandsome.bits |= RichMask;
+    } else {
+        _tallRichHandsome.bits &= ~RichMask;
+    }
 }
 
 - (void)setHandsome:(BOOL)handsome {
-    _tallRichHandsome.handsome = handsome;
+    if (handsome) {
+        _tallRichHandsome.bits |= HandsomeMask;
+    } else {
+        _tallRichHandsome.bits &= ~HandsomeMask;
+    }
 }
 
 - (BOOL)isTall {
-    return !!_tallRichHandsome.tall;
+    return !!(_tallRichHandsome.bits & TallMask);
 }
 
 - (BOOL)isRich {
-    return !!_tallRichHandsome.rich;
+    return !!(_tallRichHandsome.bits & RichMask);
 }
 
 - (BOOL)isHandsome {
-    return !!_tallRichHandsome.handsome;
+    return !!(_tallRichHandsome.bits & HandsomeMask);
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//@interface Person () {
+//    struct _tallRichHandsome {
+//        char tall : 1;
+//        char rich : 1;
+//        char handsome : 1;
+//    } _tallRichHandsome;
+//
+//}
+//
+//
+//@end
+//
+//@implementation Person
+//
+//- (void)setTall:(BOOL)tall {
+//    _tallRichHandsome.tall = tall;
+//}
+//
+//- (void)setRich:(BOOL)rich {
+//    _tallRichHandsome.rich = rich;
+//}
+//
+//- (void)setHandsome:(BOOL)handsome {
+//    _tallRichHandsome.handsome = handsome;
+//}
+//
+//- (BOOL)isTall {
+//    return !!_tallRichHandsome.tall;
+//}
+//
+//- (BOOL)isRich {
+//    return !!_tallRichHandsome.rich;
+//}
+//
+//- (BOOL)isHandsome {
+//    return !!_tallRichHandsome.handsome;
+//}
+//
+//@end
 
 
 

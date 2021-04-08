@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03F7424D261F394200557F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7424C261F394200557F22 /* main.m */; };
+		03F74256261F394F00557F22 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F74255261F394F00557F22 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		03F74249261F394200557F22 /* 20_interview_runtime_dynamic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 20_interview_runtime_dynamic; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F7424C261F394200557F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03F74254261F394F00557F22 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		03F74255261F394F00557F22 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				03F7424C261F394200557F22 /* main.m */,
+				03F74254261F394F00557F22 /* Person.h */,
+				03F74255261F394F00557F22 /* Person.m */,
 			);
 			path = 20_interview_runtime_dynamic;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F74256261F394F00557F22 /* Person.m in Sources */,
 				03F7424D261F394200557F22 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

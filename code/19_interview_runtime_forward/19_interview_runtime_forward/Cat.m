@@ -9,8 +9,8 @@
 
 @implementation Cat
 
-- (void)test {
-    NSLog(@"%s", __func__);
+- (int)test:(int)age {
+    return age * 2;
 }
 
 @end

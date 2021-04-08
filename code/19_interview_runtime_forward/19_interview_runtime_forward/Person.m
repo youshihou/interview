@@ -19,11 +19,53 @@
 //    return [super resolveInstanceMethod:sel];
 //}
 
-- (id)forwardingTargetForSelector:(SEL)aSelector {
-    if (@selector(test) == aSelector) {
-        return [[Cat alloc] init];
+//- (id)forwardingTargetForSelector:(SEL)aSelector {
+//    if (@selector(test) == aSelector) {
+//        return [[Cat alloc] init];
+//    }
+//    return [super forwardingTargetForSelector:aSelector];
+//}
+
+
+//- (id)forwardingTargetForSelector:(SEL)aSelector {
+//    if (@selector(test) == aSelector) {
+//        return nil;
+//    }
+//    return [super forwardingTargetForSelector:aSelector];
+//}
+//
+//
+//- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+//    if (@selector(test) == aSelector) {
+//        return [NSMethodSignature signatureWithObjCTypes:"v16@0:8"];
+//    }
+//    return [super methodSignatureForSelector:aSelector];
+//}
+//
+//- (void)forwardInvocation:(NSInvocation *)anInvocation {
+//    anInvocation.target = [[Cat alloc] init];
+//    [anInvocation invoke];
+//}
+
+
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+    if (@selector(test:) == aSelector) {
+        return [NSMethodSignature signatureWithObjCTypes:"i20@0:8i16"];
     }
-    return [super forwardingTargetForSelector:aSelector];
+    return [super methodSignatureForSelector:aSelector];
 }
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+//    int age;
+//    [anInvocation getArgument:&age atIndex:2];
+//    NSLog(@"%d", age);
+    
+    [anInvocation invokeWithTarget:[[Cat alloc] init]];
+    int ret;
+    [anInvocation getReturnValue:&ret];
+    NSLog(@"%d", ret);
+}
+
 
 @end

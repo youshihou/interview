@@ -11,7 +11,8 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Person *p = [[Person alloc] init];
-        [p test];
+//        [p test];
+        [p test:10];
     }
     return 0;
 }

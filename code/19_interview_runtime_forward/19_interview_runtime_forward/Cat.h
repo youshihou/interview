@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Cat : NSObject
 
-- (void)test;
+- (int)test:(int)age;
 
 @end
 

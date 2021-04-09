@@ -9,4 +9,8 @@
 
 @implementation Person
 
+- (void)print {
+    NSLog(@"%s %@", __func__, self.name);
+}
+
 @end

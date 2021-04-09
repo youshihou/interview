@@ -14,6 +14,7 @@
 		03F742A726200FC700557F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F742A626200FC700557F22 /* Assets.xcassets */; };
 		03F742AA26200FC700557F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F742A826200FC700557F22 /* LaunchScreen.storyboard */; };
 		03F742AD26200FC700557F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F742AC26200FC700557F22 /* main.m */; };
+		03F742B626200FEE00557F22 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F742B526200FEE00557F22 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		03F742A926200FC700557F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03F742AB26200FC700557F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03F742AC26200FC700557F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03F742B426200FEE00557F22 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		03F742B526200FEE00557F22 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				03F7429E26200FC000557F22 /* SceneDelegate.m */,
 				03F742A026200FC000557F22 /* ViewController.h */,
 				03F742A126200FC000557F22 /* ViewController.m */,
+				03F742B426200FEE00557F22 /* Person.h */,
+				03F742B526200FEE00557F22 /* Person.m */,
 				03F742A326200FC000557F22 /* Main.storyboard */,
 				03F742A626200FC700557F22 /* Assets.xcassets */,
 				03F742A826200FC700557F22 /* LaunchScreen.storyboard */,
@@ -147,6 +152,7 @@
 			files = (
 				03F742A226200FC000557F22 /* ViewController.m in Sources */,
 				03F7429C26200FC000557F22 /* AppDelegate.m in Sources */,
+				03F742B626200FEE00557F22 /* Person.m in Sources */,
 				03F742AD26200FC700557F22 /* main.m in Sources */,
 				03F7429F26200FC000557F22 /* SceneDelegate.m in Sources */,
 			);

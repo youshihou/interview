@@ -14,6 +14,7 @@
 		03F742ED262056C900557F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F742EC262056C900557F22 /* Assets.xcassets */; };
 		03F742F0262056C900557F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F742EE262056C900557F22 /* LaunchScreen.storyboard */; };
 		03F742F3262056C900557F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F742F2262056C900557F22 /* main.m */; };
+		03F742FC2620582700557F22 /* UIControl+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F742FB2620582700557F22 /* UIControl+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		03F742EF262056C900557F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03F742F1262056C900557F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03F742F2262056C900557F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03F742FA2620582700557F22 /* UIControl+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+Extension.h"; sourceTree = "<group>"; };
+		03F742FB2620582700557F22 /* UIControl+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				03F742E4262056C100557F22 /* SceneDelegate.m */,
 				03F742E6262056C100557F22 /* ViewController.h */,
 				03F742E7262056C100557F22 /* ViewController.m */,
+				03F742FA2620582700557F22 /* UIControl+Extension.h */,
+				03F742FB2620582700557F22 /* UIControl+Extension.m */,
 				03F742E9262056C100557F22 /* Main.storyboard */,
 				03F742EC262056C900557F22 /* Assets.xcassets */,
 				03F742EE262056C900557F22 /* LaunchScreen.storyboard */,
@@ -148,6 +153,7 @@
 				03F742E8262056C100557F22 /* ViewController.m in Sources */,
 				03F742E2262056C100557F22 /* AppDelegate.m in Sources */,
 				03F742F3262056C900557F22 /* main.m in Sources */,
+				03F742FC2620582700557F22 /* UIControl+Extension.m in Sources */,
 				03F742E5262056C100557F22 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

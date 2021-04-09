@@ -15,8 +15,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
 }
 
+- (IBAction)click1 {
+    NSLog(@"%s", __func__);
+}
+
+- (IBAction)click2 {
+    NSLog(@"%s", __func__);
+}
+
+- (IBAction)click3 {
+    NSLog(@"%s", __func__);
+}
 
 @end

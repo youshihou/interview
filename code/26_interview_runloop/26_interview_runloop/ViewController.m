@@ -15,7 +15,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+//    NSRunLoop *loop = [NSRunLoop currentRunLoop];
+//    CFRunLoopRef ref = CFRunLoopGetCurrent();
+    NSLog(@"%p %p", [NSRunLoop mainRunLoop], [NSRunLoop currentRunLoop]);
+    NSLog(@"%p %p", CFRunLoopGetMain(), CFRunLoopGetCurrent());
 }
 
 

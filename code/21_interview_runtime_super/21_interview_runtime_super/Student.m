@@ -52,6 +52,7 @@
 //
 //- (Class)superClass {
 //    // 取决于消息接收者self的类型
+//    return [self class]->superClass;
 //    return class_getSuperclass(object_getClass(self));
 //}
 //

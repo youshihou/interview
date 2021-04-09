@@ -9,4 +9,8 @@
 
 @implementation Car
 
+- (void)run {
+    NSLog(@"%s", __func__);
+}
+
 @end

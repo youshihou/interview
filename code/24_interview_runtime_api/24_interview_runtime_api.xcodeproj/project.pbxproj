@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		03F742C526203C6F00557F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F742C426203C6F00557F22 /* main.m */; };
+		03F742CE26203C8200557F22 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F742CD26203C8200557F22 /* Person.m */; };
+		03F742D226203D0600557F22 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F742D126203D0600557F22 /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		03F742C126203C6F00557F22 /* 24_interview_runtime_api */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 24_interview_runtime_api; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F742C426203C6F00557F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03F742CC26203C8200557F22 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		03F742CD26203C8200557F22 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		03F742D026203D0600557F22 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		03F742D126203D0600557F22 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				03F742C426203C6F00557F22 /* main.m */,
+				03F742CC26203C8200557F22 /* Person.h */,
+				03F742CD26203C8200557F22 /* Person.m */,
+				03F742D026203D0600557F22 /* Car.h */,
+				03F742D126203D0600557F22 /* Car.m */,
 			);
 			path = 24_interview_runtime_api;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F742D226203D0600557F22 /* Car.m in Sources */,
+				03F742CE26203C8200557F22 /* Person.m in Sources */,
 				03F742C526203C6F00557F22 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

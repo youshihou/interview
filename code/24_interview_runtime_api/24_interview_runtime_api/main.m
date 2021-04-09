@@ -44,27 +44,48 @@ void test() {
     objc_disposeClassPair(cls);
 }
 
+void test2() {
+    Ivar ivar = class_getInstanceVariable([Person class], "_age");
+    NSLog(@"%s %s", ivar_getName(ivar), ivar_getTypeEncoding(ivar));
+    
+    Person *p = [[Person alloc] init];
+    object_setIvar(p, ivar, (__bridge id _Nullable)((void *)100));
+    NSLog(@"%d", p.age);
+
+    ivar = class_getInstanceVariable([Person class], "_name");
+    object_setIvar(p, ivar, @"666");
+    object_getIvar(p, ivar);
+    NSLog(@"%@", p.name);
+    
+    unsigned int count;
+    Ivar *ivars = class_copyIvarList([Person class], &count);
+    for (int i = 0; i < count; i++) {
+        Ivar ivar = ivars[i];
+        NSLog(@"%s %s", ivar_getName(ivar), ivar_getTypeEncoding(ivar));
+    }
+    free(ivars);
+}
+
+void run2() {
+    NSLog(@"%s", __func__);
+}
+
+void test3() {
+    Person *p = [[Person alloc] init];
+//        class_replaceMethod([Person class], @selector(run), (IMP)run2, "v");
+    class_replaceMethod([Person class], @selector(run), imp_implementationWithBlock(^{
+        NSLog(@"---------");
+    }), "v");
+    [p run];
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Ivar ivar = class_getInstanceVariable([Person class], "_age");
-        NSLog(@"%s %s", ivar_getName(ivar), ivar_getTypeEncoding(ivar));
-        
         Person *p = [[Person alloc] init];
-        object_setIvar(p, ivar, (__bridge id _Nullable)((void *)100));
-        NSLog(@"%d", p.age);
-
-        ivar = class_getInstanceVariable([Person class], "_name");
-        object_setIvar(p, ivar, @"666");
-        object_getIvar(p, ivar);
-        NSLog(@"%@", p.name);
-        
-        unsigned int count;
-        Ivar *ivars = class_copyIvarList([Person class], &count);
-        for (int i = 0; i < count; i++) {
-            Ivar ivar = ivars[i];
-            NSLog(@"%s %s", ivar_getName(ivar), ivar_getTypeEncoding(ivar));
-        }
-        free(ivars);
+        Method run = class_getInstanceMethod([Person class], @selector(run));
+        Method test = class_getInstanceMethod([Person class], @selector(test));
+        method_exchangeImplementations(run, test);
+        [p test];
     }
     return 0;
 }

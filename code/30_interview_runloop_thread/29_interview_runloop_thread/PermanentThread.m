@@ -23,7 +23,7 @@
 @interface PermanentThread ()
 
 @property (nonatomic, strong) InnerThread *thread;
-@property (nonatomic, assign, getter=isStop) BOOL stop;
+//@property (nonatomic, assign, getter=isStop) BOOL stop;
 @end
 
 @implementation PermanentThread
@@ -36,13 +36,27 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _stop = NO;
-        __weak typeof(self) weakSelf = self;
+//        _stop = NO;
+//        __weak typeof(self) weakSelf = self;
         _thread = [[InnerThread alloc] initWithBlock:^{
-            [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
-            while (weakSelf && !weakSelf.isStop) {
-                [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
-            }
+//            [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+//            while (weakSelf && !weakSelf.isStop) {
+//                [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+//            }
+            
+            
+            NSLog(@"------ begin ------");
+            CFRunLoopSourceContext ctx = {0};
+            CFRunLoopSourceRef source = CFRunLoopSourceCreate(kCFAllocatorDefault, 0, &ctx);
+            CFRunLoopAddSource(CFRunLoopGetCurrent(), source, kCFRunLoopDefaultMode);
+            CFRelease(source);
+//            while (weakSelf && !weakSelf.isStop) {
+//                // true代表执行完source就会退出当前的runloop
+//                CFRunLoopRunInMode(kCFRunLoopDefaultMode, 1.0e10, true);
+//            }
+            
+            CFRunLoopRunInMode(kCFRunLoopDefaultMode, 1.0e10, false);
+            NSLog(@"------ end ------");
         }];
     }
     return self;
@@ -69,7 +83,7 @@
 }
 
 - (void)_stopThread {
-    self.stop = YES;
+//    self.stop = YES;
     CFRunLoopStop(CFRunLoopGetCurrent());
     self.thread = nil;
 }

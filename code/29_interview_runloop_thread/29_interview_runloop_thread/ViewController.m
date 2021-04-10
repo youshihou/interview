@@ -27,10 +27,11 @@
     self.thread = [[Thread alloc] initWithBlock:^{
         NSLog(@"%@ --------- begin ---------", [NSThread currentThread]);
         [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
-        while (!weakSelf.isStop) {
+//        [[NSRunLoop currentRunLoop] run];
+        while (weakSelf && !weakSelf.isStop) {
+            NSLog(@"%@", weakSelf);
             [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
         }
-//        [[NSRunLoop currentRunLoop] run];
         NSLog(@"%@ --------- end ---------", [NSThread currentThread]);
     }];
     [self.thread start];
@@ -44,6 +45,8 @@
 //}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    if (!self.thread) { return; }
+    
     [self performSelector:@selector(test) onThread:self.thread withObject:nil waitUntilDone:NO];
 }
 
@@ -57,7 +60,9 @@
 }
 
 - (IBAction)stop {
-    [self performSelector:@selector(stopThread) onThread:self.thread withObject:nil waitUntilDone:NO];
+    if (!self.thread) { return; }
+    // YES代表等子线程的的任务执行完后再继续执行主线程的任务
+    [self performSelector:@selector(stopThread) onThread:self.thread withObject:nil waitUntilDone:YES];
 }
 
 - (void)stopThread {
@@ -65,6 +70,7 @@
     
     self.stop = YES;
     CFRunLoopStop(CFRunLoopGetCurrent());
+    self.thread = nil;
 }
 
 @end

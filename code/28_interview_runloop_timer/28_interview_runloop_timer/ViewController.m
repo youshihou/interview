@@ -15,7 +15,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    
+    static int count = 0;
+//    [NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+//        NSLog(@"%d", ++count);
+//    }];
+    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        NSLog(@"%d", ++count);
+    }];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    // NSDefaultRunLoopMode UITrackingRunLoopMode 两种模式
+    // NSRunLoopCommonModes不是一个模式，只是一个标记，timer能在——commonModes数组中存放的模式下工作
 }
 
 

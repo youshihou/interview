@@ -30,6 +30,7 @@
 
 - (void)dealloc {
     NSLog(@"%s", __func__);
+    [self stop];
 }
 
 - (instancetype)init {

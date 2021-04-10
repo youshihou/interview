@@ -31,7 +31,7 @@
 
 - (void)dealloc {
     NSLog(@"%s", __func__);
-    [self stop];
+//    [self stop];
 }
 
 - (IBAction)stop {

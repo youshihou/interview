@@ -1,6 +1,6 @@
 //
 //  PermanentThread.h
-//  30_interview_runloop_permanentthread
+//  29_interview_runloop_thread
 //
 //  Created by Ankui on 4/10/21.
 //
@@ -10,6 +10,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PermanentThread : NSObject
+
+- (void)start;
+- (void)stop;
+- (void)doTask:(void(^)(void))task;
 
 @end
 

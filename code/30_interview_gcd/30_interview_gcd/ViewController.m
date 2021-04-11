@@ -16,6 +16,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    dispatch_async(queue, ^{
+        NSLog(@"1");
+//        [self performSelector:@selector(test1) withObject:nil];
+        [self performSelector:@selector(test1) withObject:nil afterDelay:0.];
+        NSLog(@"3");
+        [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+    });
+}
+
+- (void)test1 {
+    NSLog(@"2");
+}
+
+- (void)test {
+    // !!! 使用sync往当前串行队列中添加任务，会卡住当前的串行队列，产生死锁 ！！！
+
+    
     // dispatch_sync / dispatch_async 用来控制是否开启新线程
     // 队列的类型，决定了任务的执行方式（并发、串行）
     // 并发队列、串行队列、主队列（特殊的串行队列）
@@ -109,8 +131,6 @@
     NSLog(@"5");
 
 
-    // 使用sync往当前串行队列中添加任务，会卡住当前的串行队列，产生死锁！！！
 }
-
 
 @end

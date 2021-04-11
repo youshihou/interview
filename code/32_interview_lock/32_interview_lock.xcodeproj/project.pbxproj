@@ -16,6 +16,7 @@
 		03F7451B2622DE0000557F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7451A2622DE0000557F22 /* main.m */; };
 		03F745242622F45800557F22 /* BaseTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745232622F45800557F22 /* BaseTask.m */; };
 		03F7452A2622F5C500557F22 /* OSSpinLockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745292622F5C500557F22 /* OSSpinLockTask.m */; };
+		03F7452E2623241B00557F22 /* OSUnfairLockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7452D2623241B00557F22 /* OSUnfairLockTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		03F745232622F45800557F22 /* BaseTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTask.m; sourceTree = "<group>"; };
 		03F745282622F5C500557F22 /* OSSpinLockTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSpinLockTask.h; sourceTree = "<group>"; };
 		03F745292622F5C500557F22 /* OSSpinLockTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockTask.m; sourceTree = "<group>"; };
+		03F7452C2623241B00557F22 /* OSUnfairLockTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSUnfairLockTask.h; sourceTree = "<group>"; };
+		03F7452D2623241B00557F22 /* OSUnfairLockTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSUnfairLockTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				03F745232622F45800557F22 /* BaseTask.m */,
 				03F745282622F5C500557F22 /* OSSpinLockTask.h */,
 				03F745292622F5C500557F22 /* OSSpinLockTask.m */,
+				03F7452C2623241B00557F22 /* OSUnfairLockTask.h */,
+				03F7452D2623241B00557F22 /* OSUnfairLockTask.m */,
 			);
 			path = Lock;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03F745102622DDF900557F22 /* ViewController.m in Sources */,
+				03F7452E2623241B00557F22 /* OSUnfairLockTask.m in Sources */,
 				03F7450A2622DDF900557F22 /* AppDelegate.m in Sources */,
 				03F745242622F45800557F22 /* BaseTask.m in Sources */,
 				03F7452A2622F5C500557F22 /* OSSpinLockTask.m in Sources */,

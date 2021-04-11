@@ -17,6 +17,11 @@
 
 @implementation MutexTask
 
+- (void)dealloc {
+    pthread_mutex_destroy(&_ticketlock);
+    pthread_mutex_destroy(&_moneylock);
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -27,9 +32,12 @@
         pthread_mutexattr_init(&attr);
         pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_DEFAULT);
         
-        pthread_mutex_init(&_ticketlock, &attr);
+//        pthread_mutex_init(&_ticketlock, &attr);
+        // NULL 就是默认锁
+        pthread_mutex_init(&_ticketlock, NULL);
         pthread_mutexattr_init(&attr);
-        pthread_mutex_init(&_moneylock, &attr);
+//        pthread_mutex_init(&_moneylock, &attr);
+        pthread_mutex_init(&_moneylock, NULL);
         pthread_mutexattr_destroy(&attr);
     }
     return self;

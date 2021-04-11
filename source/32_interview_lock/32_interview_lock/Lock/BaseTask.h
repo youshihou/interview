@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)testTicket;
 - (void)testMoney;
+- (void)testOther;
+
 
 - (void)_saleTicket;
 - (void)_saveMoney;

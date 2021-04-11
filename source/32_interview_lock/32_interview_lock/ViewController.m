@@ -9,6 +9,7 @@
 #import "OSSpinLockTask.h"
 #import "OSUnfairLockTask.h"
 #import "MutexTask.h"
+#import "MutexRecursiveTask.h"
 
 @interface ViewController ()
 
@@ -23,8 +24,10 @@
 //    task = [[OSSpinLockTask alloc] init];
 //    task = [[OSUnfairLockTask alloc] init];
     task = [[MutexTask alloc] init];
-    [task testTicket];
-    [task testMoney];
+    task = [[MutexRecursiveTask alloc] init];
+    [task testOther];
+//    [task testTicket];
+//    [task testMoney];
 }
 
 

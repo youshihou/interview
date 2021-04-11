@@ -16,6 +16,10 @@
 
 @implementation BaseTask
 
+- (void)testOther {
+    
+}
+
 - (void)testTicket {
     self.count = 15;
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);

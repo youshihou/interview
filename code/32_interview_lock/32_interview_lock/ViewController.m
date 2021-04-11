@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "OSSpinLockTask.h"
 #import "OSUnfairLockTask.h"
+#import "MutexTask.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    BaseTask *task = [[OSUnfairLockTask alloc] init];
+    BaseTask *task = nil;
+//    task = [[OSSpinLockTask alloc] init];
+//    task = [[OSUnfairLockTask alloc] init];
+    task = [[MutexTask alloc] init];
     [task testTicket];
     [task testMoney];
 }

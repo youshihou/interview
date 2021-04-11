@@ -10,7 +10,7 @@
 
 @interface OSSpinLockTask ()
 
-@property (nonatomic, assign) OSSpinLock ticketLock;
+//@property (nonatomic, assign) OSSpinLock ticketLock;
 @property (nonatomic, assign) OSSpinLock moneyLock;
 
 @end
@@ -20,13 +20,14 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _ticketLock = OS_SPINLOCK_INIT;
+//        _ticketLock = OS_SPINLOCK_INIT;
         _moneyLock = OS_SPINLOCK_INIT;
     }
     return self;
 }
 
 - (void)_saleTicket {
+    static OSSpinLock _ticketLock = OS_SPINLOCK_INIT;
     OSSpinLockLock(&_ticketLock);
     [super _saleTicket];
     OSSpinLockUnlock(&_ticketLock);

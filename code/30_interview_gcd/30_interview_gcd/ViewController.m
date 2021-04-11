@@ -25,7 +25,7 @@
 //        [self performSelector:@selector(test1) withObject:nil];
         [self performSelector:@selector(test1) withObject:nil afterDelay:0.];
         NSLog(@"3");
-        [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+//        [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
     });
 }

@@ -21,22 +21,22 @@
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
     dispatch_async(queue, ^{
         for (NSInteger i = 0; i < 5; i++) {
-            [self saleOneTicket];
+            [self _saleTicket];
         }
     });
     dispatch_async(queue, ^{
         for (NSInteger i = 0; i < 5; i++) {
-            [self saleOneTicket];
+            [self _saleTicket];
         }
     });
     dispatch_async(queue, ^{
         for (NSInteger i = 0; i < 5; i++) {
-            [self saleOneTicket];
+            [self _saleTicket];
         }
     });
 }
 
-- (void)saleOneTicket {
+- (void)_saleTicket {
     NSInteger count = self.count;
     sleep(.2);
     count--;
@@ -49,17 +49,17 @@
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
     dispatch_async(queue, ^{
         for (NSInteger i = 0; i < 10; i++) {
-            [self saveMoney];
+            [self _saveMoney];
         }
     });
     dispatch_async(queue, ^{
         for (NSInteger i = 0; i < 10; i++) {
-            [self takeMoney];
+            [self _takeMoney];
         }
     });
 }
 
-- (void)saveMoney {
+- (void)_saveMoney {
     NSInteger money = self.money;
     sleep(.2);
     money += 50;
@@ -67,7 +67,7 @@
     NSLog(@"save50, %zd, %@", self.money, [NSThread currentThread]);
 }
 
-- (void)takeMoney {
+- (void)_takeMoney {
     NSInteger money = self.money;
     sleep(.2);
     money -= 20;

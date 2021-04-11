@@ -14,6 +14,8 @@
 		03F745152622DE0000557F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F745142622DE0000557F22 /* Assets.xcassets */; };
 		03F745182622DE0000557F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F745162622DE0000557F22 /* LaunchScreen.storyboard */; };
 		03F7451B2622DE0000557F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7451A2622DE0000557F22 /* main.m */; };
+		03F745242622F45800557F22 /* BaseTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745232622F45800557F22 /* BaseTask.m */; };
+		03F7452A2622F5C500557F22 /* OSSpinLockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745292622F5C500557F22 /* OSSpinLockTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		03F745172622DE0000557F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03F745192622DE0000557F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03F7451A2622DE0000557F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03F745222622F45800557F22 /* BaseTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTask.h; sourceTree = "<group>"; };
+		03F745232622F45800557F22 /* BaseTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTask.m; sourceTree = "<group>"; };
+		03F745282622F5C500557F22 /* OSSpinLockTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSpinLockTask.h; sourceTree = "<group>"; };
+		03F745292622F5C500557F22 /* OSSpinLockTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 				03F7450C2622DDF900557F22 /* SceneDelegate.m */,
 				03F7450E2622DDF900557F22 /* ViewController.h */,
 				03F7450F2622DDF900557F22 /* ViewController.m */,
+				03F745262622F58400557F22 /* Lock */,
 				03F745112622DDF900557F22 /* Main.storyboard */,
 				03F745142622DE0000557F22 /* Assets.xcassets */,
 				03F745162622DE0000557F22 /* LaunchScreen.storyboard */,
@@ -74,6 +81,17 @@
 				03F7451A2622DE0000557F22 /* main.m */,
 			);
 			path = 32_interview_lock;
+			sourceTree = "<group>";
+		};
+		03F745262622F58400557F22 /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				03F745222622F45800557F22 /* BaseTask.h */,
+				03F745232622F45800557F22 /* BaseTask.m */,
+				03F745282622F5C500557F22 /* OSSpinLockTask.h */,
+				03F745292622F5C500557F22 /* OSSpinLockTask.m */,
+			);
+			path = Lock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +165,8 @@
 			files = (
 				03F745102622DDF900557F22 /* ViewController.m in Sources */,
 				03F7450A2622DDF900557F22 /* AppDelegate.m in Sources */,
+				03F745242622F45800557F22 /* BaseTask.m in Sources */,
+				03F7452A2622F5C500557F22 /* OSSpinLockTask.m in Sources */,
 				03F7451B2622DE0000557F22 /* main.m in Sources */,
 				03F7450D2622DDF900557F22 /* SceneDelegate.m in Sources */,
 			);

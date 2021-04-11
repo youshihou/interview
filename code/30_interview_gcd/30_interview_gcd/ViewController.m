@@ -19,15 +19,26 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
-    dispatch_async(queue, ^{
+//    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+//    dispatch_async(queue, ^{
+//        NSLog(@"1");
+////        [self performSelector:@selector(test1) withObject:nil];
+//        [self performSelector:@selector(test1) withObject:nil afterDelay:0.];
+//        NSLog(@"3");
+////        [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+//        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+//    });
+    
+    
+    
+    
+    NSThread *t = [[NSThread alloc] initWithBlock:^{
         NSLog(@"1");
-//        [self performSelector:@selector(test1) withObject:nil];
-        [self performSelector:@selector(test1) withObject:nil afterDelay:0.];
-        NSLog(@"3");
-//        [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+        [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
-    });
+    }];
+    [t start];
+    [self performSelector:@selector(test1) onThread:t withObject:nil waitUntilDone:YES];
 }
 
 - (void)test1 {

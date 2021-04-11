@@ -32,13 +32,38 @@
     
     
     
-    NSThread *t = [[NSThread alloc] initWithBlock:^{
-        NSLog(@"1");
-        [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
-    }];
-    [t start];
-    [self performSelector:@selector(test1) onThread:t withObject:nil waitUntilDone:YES];
+//    NSThread *t = [[NSThread alloc] initWithBlock:^{
+//        NSLog(@"1");
+//        [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+//        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+//    }];
+//    [t start];
+//    [self performSelector:@selector(test1) onThread:t withObject:nil waitUntilDone:YES];
+    
+    
+    
+    
+    
+    
+    dispatch_queue_t queue = dispatch_queue_create("xxqueue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, queue, ^{
+        for (NSInteger i = 0; i < 5; i++) {
+            NSLog(@"1, %@", [NSThread currentThread]);
+        }
+    });
+    
+    dispatch_group_async(group, queue, ^{
+        for (NSInteger i = 0; i < 5; i++) {
+            NSLog(@"2, %@", [NSThread currentThread]);
+        }
+    });
+    
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        for (NSInteger i = 0; i < 5; i++) {
+            NSLog(@"3, %@", [NSThread currentThread]);
+        }
+    });
 }
 
 - (void)test1 {

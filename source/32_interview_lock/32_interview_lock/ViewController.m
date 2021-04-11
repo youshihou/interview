@@ -10,6 +10,7 @@
 #import "OSUnfairLockTask.h"
 #import "MutexTask.h"
 #import "MutexRecursiveTask.h"
+#import "MutexCondTask.h"
 
 @interface ViewController ()
 
@@ -23,8 +24,9 @@
     BaseTask *task = nil;
 //    task = [[OSSpinLockTask alloc] init];
 //    task = [[OSUnfairLockTask alloc] init];
-    task = [[MutexTask alloc] init];
-    task = [[MutexRecursiveTask alloc] init];
+//    task = [[MutexTask alloc] init];
+//    task = [[MutexRecursiveTask alloc] init];
+    task = [[MutexCondTask alloc] init];
     [task testOther];
 //    [task testTicket];
 //    [task testMoney];

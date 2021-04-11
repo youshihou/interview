@@ -19,6 +19,7 @@
 		03F7452E2623241B00557F22 /* OSUnfairLockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7452D2623241B00557F22 /* OSUnfairLockTask.m */; };
 		03F745322623274700557F22 /* MutexTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745312623274700557F22 /* MutexTask.m */; };
 		03F7453726232F3600557F22 /* MutexRecursiveTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7453626232F3600557F22 /* MutexRecursiveTask.m */; };
+		03F7453B2623444200557F22 /* MutexCondTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7453A2623444200557F22 /* MutexCondTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		03F745312623274700557F22 /* MutexTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutexTask.m; sourceTree = "<group>"; };
 		03F7453526232F3600557F22 /* MutexRecursiveTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutexRecursiveTask.h; sourceTree = "<group>"; };
 		03F7453626232F3600557F22 /* MutexRecursiveTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutexRecursiveTask.m; sourceTree = "<group>"; };
+		03F745392623444200557F22 /* MutexCondTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutexCondTask.h; sourceTree = "<group>"; };
+		03F7453A2623444200557F22 /* MutexCondTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutexCondTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				03F745312623274700557F22 /* MutexTask.m */,
 				03F7453526232F3600557F22 /* MutexRecursiveTask.h */,
 				03F7453626232F3600557F22 /* MutexRecursiveTask.m */,
+				03F745392623444200557F22 /* MutexCondTask.h */,
+				03F7453A2623444200557F22 /* MutexCondTask.m */,
 			);
 			path = Lock;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				03F7452E2623241B00557F22 /* OSUnfairLockTask.m in Sources */,
 				03F7450A2622DDF900557F22 /* AppDelegate.m in Sources */,
 				03F745242622F45800557F22 /* BaseTask.m in Sources */,
+				03F7453B2623444200557F22 /* MutexCondTask.m in Sources */,
 				03F745322623274700557F22 /* MutexTask.m in Sources */,
 				03F7452A2622F5C500557F22 /* OSSpinLockTask.m in Sources */,
 				03F7451B2622DE0000557F22 /* main.m in Sources */,

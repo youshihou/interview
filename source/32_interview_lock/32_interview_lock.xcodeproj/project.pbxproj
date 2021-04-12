@@ -24,6 +24,7 @@
 		03F745432623DDD000557F22 /* NSRecursiveLockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745422623DDD000557F22 /* NSRecursiveLockTask.m */; };
 		03F745472623DDF400557F22 /* NSConditionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745462623DDF400557F22 /* NSConditionTask.m */; };
 		03F7454B2623E43D00557F22 /* NSConditionLockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7454A2623E43D00557F22 /* NSConditionLockTask.m */; };
+		03F7454F2623EA3A00557F22 /* SerialQueueTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7454E2623EA3A00557F22 /* SerialQueueTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		03F745462623DDF400557F22 /* NSConditionTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionTask.m; sourceTree = "<group>"; };
 		03F745492623E43D00557F22 /* NSConditionLockTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionLockTask.h; sourceTree = "<group>"; };
 		03F7454A2623E43D00557F22 /* NSConditionLockTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockTask.m; sourceTree = "<group>"; };
+		03F7454D2623EA3A00557F22 /* SerialQueueTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerialQueueTask.h; sourceTree = "<group>"; };
+		03F7454E2623EA3A00557F22 /* SerialQueueTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerialQueueTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				03F745462623DDF400557F22 /* NSConditionTask.m */,
 				03F745492623E43D00557F22 /* NSConditionLockTask.h */,
 				03F7454A2623E43D00557F22 /* NSConditionLockTask.m */,
+				03F7454D2623EA3A00557F22 /* SerialQueueTask.h */,
+				03F7454E2623EA3A00557F22 /* SerialQueueTask.m */,
 			);
 			path = Lock;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				03F7454B2623E43D00557F22 /* NSConditionLockTask.m in Sources */,
 				03F7450A2622DDF900557F22 /* AppDelegate.m in Sources */,
 				03F745472623DDF400557F22 /* NSConditionTask.m in Sources */,
+				03F7454F2623EA3A00557F22 /* SerialQueueTask.m in Sources */,
 				03F745242622F45800557F22 /* BaseTask.m in Sources */,
 				03F7453B2623444200557F22 /* MutexCondTask.m in Sources */,
 				03F745322623274700557F22 /* MutexTask.m in Sources */,

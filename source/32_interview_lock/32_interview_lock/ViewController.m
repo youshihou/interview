@@ -11,6 +11,9 @@
 #import "MutexTask.h"
 #import "MutexRecursiveTask.h"
 #import "MutexCondTask.h"
+#import "NSLockTask.h"
+#import "NSRecursiveLockTask.h"
+#import "NSConditionTask.h"
 
 @interface ViewController ()
 
@@ -26,10 +29,13 @@
 //    task = [[OSUnfairLockTask alloc] init];
 //    task = [[MutexTask alloc] init];
 //    task = [[MutexRecursiveTask alloc] init];
-    task = [[MutexCondTask alloc] init];
-    [task testOther];
+//    task = [[MutexCondTask alloc] init];
+//    task = [[NSLockTask alloc] init];
+//    task = [[NSRecursiveLockTask alloc] init];
+    task = [[NSConditionTask alloc] init];
 //    [task testTicket];
 //    [task testMoney];
+    [task testOther];
 }
 
 

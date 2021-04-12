@@ -20,6 +20,9 @@
 		03F745322623274700557F22 /* MutexTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745312623274700557F22 /* MutexTask.m */; };
 		03F7453726232F3600557F22 /* MutexRecursiveTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7453626232F3600557F22 /* MutexRecursiveTask.m */; };
 		03F7453B2623444200557F22 /* MutexCondTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7453A2623444200557F22 /* MutexCondTask.m */; };
+		03F7453F2623DB3100557F22 /* NSLockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7453E2623DB3100557F22 /* NSLockTask.m */; };
+		03F745432623DDD000557F22 /* NSRecursiveLockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745422623DDD000557F22 /* NSRecursiveLockTask.m */; };
+		03F745472623DDF400557F22 /* NSConditionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745462623DDF400557F22 /* NSConditionTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,12 @@
 		03F7453626232F3600557F22 /* MutexRecursiveTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutexRecursiveTask.m; sourceTree = "<group>"; };
 		03F745392623444200557F22 /* MutexCondTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutexCondTask.h; sourceTree = "<group>"; };
 		03F7453A2623444200557F22 /* MutexCondTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutexCondTask.m; sourceTree = "<group>"; };
+		03F7453D2623DB3100557F22 /* NSLockTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLockTask.h; sourceTree = "<group>"; };
+		03F7453E2623DB3100557F22 /* NSLockTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLockTask.m; sourceTree = "<group>"; };
+		03F745412623DDD000557F22 /* NSRecursiveLockTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRecursiveLockTask.h; sourceTree = "<group>"; };
+		03F745422623DDD000557F22 /* NSRecursiveLockTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRecursiveLockTask.m; sourceTree = "<group>"; };
+		03F745452623DDF400557F22 /* NSConditionTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionTask.h; sourceTree = "<group>"; };
+		03F745462623DDF400557F22 /* NSConditionTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,12 @@
 				03F7453626232F3600557F22 /* MutexRecursiveTask.m */,
 				03F745392623444200557F22 /* MutexCondTask.h */,
 				03F7453A2623444200557F22 /* MutexCondTask.m */,
+				03F7453D2623DB3100557F22 /* NSLockTask.h */,
+				03F7453E2623DB3100557F22 /* NSLockTask.m */,
+				03F745412623DDD000557F22 /* NSRecursiveLockTask.h */,
+				03F745422623DDD000557F22 /* NSRecursiveLockTask.m */,
+				03F745452623DDF400557F22 /* NSConditionTask.h */,
+				03F745462623DDF400557F22 /* NSConditionTask.m */,
 			);
 			path = Lock;
 			sourceTree = "<group>";
@@ -184,8 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				03F745102622DDF900557F22 /* ViewController.m in Sources */,
+				03F745432623DDD000557F22 /* NSRecursiveLockTask.m in Sources */,
+				03F7453F2623DB3100557F22 /* NSLockTask.m in Sources */,
 				03F7452E2623241B00557F22 /* OSUnfairLockTask.m in Sources */,
 				03F7450A2622DDF900557F22 /* AppDelegate.m in Sources */,
+				03F745472623DDF400557F22 /* NSConditionTask.m in Sources */,
 				03F745242622F45800557F22 /* BaseTask.m in Sources */,
 				03F7453B2623444200557F22 /* MutexCondTask.m in Sources */,
 				03F745322623274700557F22 /* MutexTask.m in Sources */,

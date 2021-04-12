@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Proxy : NSProxy
 
++ (instancetype)proxyWithTarget:(id)target;
+
 @end
 
 NS_ASSUME_NONNULL_END

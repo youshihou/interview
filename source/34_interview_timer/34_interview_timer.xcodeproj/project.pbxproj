@@ -15,6 +15,7 @@
 		03F7459C262440BD00557F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F7459A262440BD00557F22 /* LaunchScreen.storyboard */; };
 		03F7459F262440BD00557F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7459E262440BD00557F22 /* main.m */; };
 		03F745A826244EF600557F22 /* ProxyTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745A726244EF600557F22 /* ProxyTask.m */; };
+		03F745AC2624536C00557F22 /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745AB2624536C00557F22 /* Proxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		03F7459E262440BD00557F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		03F745A626244EF600557F22 /* ProxyTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyTask.h; sourceTree = "<group>"; };
 		03F745A726244EF600557F22 /* ProxyTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyTask.m; sourceTree = "<group>"; };
+		03F745AA2624536C00557F22 /* Proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Proxy.h; sourceTree = "<group>"; };
+		03F745AB2624536C00557F22 /* Proxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Proxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 				03F74590262440B900557F22 /* SceneDelegate.m */,
 				03F74592262440B900557F22 /* ViewController.h */,
 				03F74593262440B900557F22 /* ViewController.m */,
+				03F745AA2624536C00557F22 /* Proxy.h */,
+				03F745AB2624536C00557F22 /* Proxy.m */,
 				03F745A626244EF600557F22 /* ProxyTask.h */,
 				03F745A726244EF600557F22 /* ProxyTask.m */,
 				03F74595262440B900557F22 /* Main.storyboard */,
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F745AC2624536C00557F22 /* Proxy.m in Sources */,
 				03F74594262440B900557F22 /* ViewController.m in Sources */,
 				03F7458E262440B900557F22 /* AppDelegate.m in Sources */,
 				03F7459F262440BD00557F22 /* main.m in Sources */,

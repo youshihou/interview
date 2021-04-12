@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "ProxyTask.h"
+#import "Proxy.h"
 
 @interface ViewController ()
 
@@ -36,10 +37,15 @@
 //        [weakSelf test];
 //    }];
     
-//    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:[ProxyTask proxyWithTarget:self] selector:@selector(test) userInfo:nil repeats:YES];
     
-    self.link = [CADisplayLink displayLinkWithTarget:[ProxyTask proxyWithTarget:self] selector:@selector(test)];
-    [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+    id target = nil;
+//    target = [ProxyTask proxyWithTarget:self];
+    target = [Proxy proxyWithTarget:self];
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:target selector:@selector(test) userInfo:nil repeats:YES];
+    
+//    self.link = [CADisplayLink displayLinkWithTarget:target selector:@selector(test)];
+//    [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
 }
 
 - (void)test {

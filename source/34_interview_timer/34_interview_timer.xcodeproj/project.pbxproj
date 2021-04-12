@@ -14,6 +14,7 @@
 		03F74599262440BD00557F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F74598262440BD00557F22 /* Assets.xcassets */; };
 		03F7459C262440BD00557F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F7459A262440BD00557F22 /* LaunchScreen.storyboard */; };
 		03F7459F262440BD00557F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7459E262440BD00557F22 /* main.m */; };
+		03F745A826244EF600557F22 /* ProxyTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745A726244EF600557F22 /* ProxyTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		03F7459B262440BD00557F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03F7459D262440BD00557F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03F7459E262440BD00557F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03F745A626244EF600557F22 /* ProxyTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyTask.h; sourceTree = "<group>"; };
+		03F745A726244EF600557F22 /* ProxyTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				03F74590262440B900557F22 /* SceneDelegate.m */,
 				03F74592262440B900557F22 /* ViewController.h */,
 				03F74593262440B900557F22 /* ViewController.m */,
+				03F745A626244EF600557F22 /* ProxyTask.h */,
+				03F745A726244EF600557F22 /* ProxyTask.m */,
 				03F74595262440B900557F22 /* Main.storyboard */,
 				03F74598262440BD00557F22 /* Assets.xcassets */,
 				03F7459A262440BD00557F22 /* LaunchScreen.storyboard */,
@@ -149,6 +154,7 @@
 				03F7458E262440B900557F22 /* AppDelegate.m in Sources */,
 				03F7459F262440BD00557F22 /* main.m in Sources */,
 				03F74591262440B900557F22 /* SceneDelegate.m in Sources */,
+				03F745A826244EF600557F22 /* ProxyTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

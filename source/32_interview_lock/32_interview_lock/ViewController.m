@@ -16,6 +16,7 @@
 #import "NSConditionTask.h"
 #import "NSConditionLockTask.h"
 #import "SerialQueueTask.h"
+#import "SemaphoreTask.h"
 
 @interface ViewController ()
 
@@ -36,10 +37,11 @@
 //    task = [[NSRecursiveLockTask alloc] init];
 //    task = [[NSConditionTask alloc] init];
 //    task = [[NSConditionLockTask alloc] init];
-    task = [[SerialQueueTask alloc] init];
-    [task testTicket];
-    [task testMoney];
-//    [task testOther];
+//    task = [[SerialQueueTask alloc] init];
+    task = [[SemaphoreTask alloc] init];
+//    [task testTicket];
+//    [task testMoney];
+    [task testOther];
 }
 
 

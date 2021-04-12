@@ -25,6 +25,7 @@
 		03F745472623DDF400557F22 /* NSConditionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745462623DDF400557F22 /* NSConditionTask.m */; };
 		03F7454B2623E43D00557F22 /* NSConditionLockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7454A2623E43D00557F22 /* NSConditionLockTask.m */; };
 		03F7454F2623EA3A00557F22 /* SerialQueueTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7454E2623EA3A00557F22 /* SerialQueueTask.m */; };
+		03F745532623EDAD00557F22 /* SemaphoreTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745522623EDAD00557F22 /* SemaphoreTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,8 @@
 		03F7454A2623E43D00557F22 /* NSConditionLockTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockTask.m; sourceTree = "<group>"; };
 		03F7454D2623EA3A00557F22 /* SerialQueueTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerialQueueTask.h; sourceTree = "<group>"; };
 		03F7454E2623EA3A00557F22 /* SerialQueueTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerialQueueTask.m; sourceTree = "<group>"; };
+		03F745512623EDAD00557F22 /* SemaphoreTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemaphoreTask.h; sourceTree = "<group>"; };
+		03F745522623EDAD00557F22 /* SemaphoreTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemaphoreTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				03F7454A2623E43D00557F22 /* NSConditionLockTask.m */,
 				03F7454D2623EA3A00557F22 /* SerialQueueTask.h */,
 				03F7454E2623EA3A00557F22 /* SerialQueueTask.m */,
+				03F745512623EDAD00557F22 /* SemaphoreTask.h */,
+				03F745522623EDAD00557F22 /* SemaphoreTask.m */,
 			);
 			path = Lock;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03F745102622DDF900557F22 /* ViewController.m in Sources */,
+				03F745532623EDAD00557F22 /* SemaphoreTask.m in Sources */,
 				03F745432623DDD000557F22 /* NSRecursiveLockTask.m in Sources */,
 				03F7453F2623DB3100557F22 /* NSLockTask.m in Sources */,
 				03F7452E2623241B00557F22 /* OSUnfairLockTask.m in Sources */,

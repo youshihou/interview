@@ -39,9 +39,9 @@
 //    task = [[NSConditionLockTask alloc] init];
 //    task = [[SerialQueueTask alloc] init];
     task = [[SemaphoreTask alloc] init];
-//    [task testTicket];
-//    [task testMoney];
-    [task testOther];
+    [task testTicket];
+    [task testMoney];
+//    [task testOther];
 }
 
 

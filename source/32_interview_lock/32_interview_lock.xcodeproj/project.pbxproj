@@ -23,6 +23,7 @@
 		03F7453F2623DB3100557F22 /* NSLockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7453E2623DB3100557F22 /* NSLockTask.m */; };
 		03F745432623DDD000557F22 /* NSRecursiveLockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745422623DDD000557F22 /* NSRecursiveLockTask.m */; };
 		03F745472623DDF400557F22 /* NSConditionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F745462623DDF400557F22 /* NSConditionTask.m */; };
+		03F7454B2623E43D00557F22 /* NSConditionLockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F7454A2623E43D00557F22 /* NSConditionLockTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		03F745422623DDD000557F22 /* NSRecursiveLockTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRecursiveLockTask.m; sourceTree = "<group>"; };
 		03F745452623DDF400557F22 /* NSConditionTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionTask.h; sourceTree = "<group>"; };
 		03F745462623DDF400557F22 /* NSConditionTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionTask.m; sourceTree = "<group>"; };
+		03F745492623E43D00557F22 /* NSConditionLockTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionLockTask.h; sourceTree = "<group>"; };
+		03F7454A2623E43D00557F22 /* NSConditionLockTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				03F745422623DDD000557F22 /* NSRecursiveLockTask.m */,
 				03F745452623DDF400557F22 /* NSConditionTask.h */,
 				03F745462623DDF400557F22 /* NSConditionTask.m */,
+				03F745492623E43D00557F22 /* NSConditionLockTask.h */,
+				03F7454A2623E43D00557F22 /* NSConditionLockTask.m */,
 			);
 			path = Lock;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				03F745432623DDD000557F22 /* NSRecursiveLockTask.m in Sources */,
 				03F7453F2623DB3100557F22 /* NSLockTask.m in Sources */,
 				03F7452E2623241B00557F22 /* OSUnfairLockTask.m in Sources */,
+				03F7454B2623E43D00557F22 /* NSConditionLockTask.m in Sources */,
 				03F7450A2622DDF900557F22 /* AppDelegate.m in Sources */,
 				03F745472623DDF400557F22 /* NSConditionTask.m in Sources */,
 				03F745242622F45800557F22 /* BaseTask.m in Sources */,

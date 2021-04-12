@@ -38,14 +38,25 @@
 //    }];
     
     
-    id target = nil;
-//    target = [ProxyTask proxyWithTarget:self];
-    target = [Proxy proxyWithTarget:self];
-    
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:target selector:@selector(test) userInfo:nil repeats:YES];
+//    id target = nil;
+////    target = [ProxyTask proxyWithTarget:self];
+//    target = [Proxy proxyWithTarget:self];
+//
+//    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:target selector:@selector(test) userInfo:nil repeats:YES];
     
 //    self.link = [CADisplayLink displayLinkWithTarget:target selector:@selector(test)];
 //    [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+    
+    
+    
+    
+    
+    ViewController *vc = [[ViewController alloc] init];
+    Proxy *p1 = [Proxy proxyWithTarget:vc];
+    ProxyTask *p2 = [ProxyTask proxyWithTarget:vc];
+    Class cls = [ViewController class];
+    NSLog(@"%d, %d", [p1 isKindOfClass:cls], // 直接进行消息转发给vc调用
+          [p2 isKindOfClass:cls]);
 }
 
 - (void)test {

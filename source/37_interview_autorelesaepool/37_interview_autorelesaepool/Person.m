@@ -9,8 +9,9 @@
 
 @implementation Person
 
-//- (void)dealloc {
+- (void)dealloc {
 //    NSLog(@"%s", __func__);
-//}
+    [super dealloc];
+}
 
 @end

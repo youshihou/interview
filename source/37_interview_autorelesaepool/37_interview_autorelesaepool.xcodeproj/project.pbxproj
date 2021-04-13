@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0323DA182625D68900350B69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0323DA172625D68900350B69 /* main.m */; };
+		0323DA212625D71000350B69 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0323DA202625D71000350B69 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		0323DA142625D68900350B69 /* 37_interview_autorelesaepool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 37_interview_autorelesaepool; sourceTree = BUILT_PRODUCTS_DIR; };
 		0323DA172625D68900350B69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0323DA1F2625D71000350B69 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0323DA202625D71000350B69 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				0323DA172625D68900350B69 /* main.m */,
+				0323DA1F2625D71000350B69 /* Person.h */,
+				0323DA202625D71000350B69 /* Person.m */,
 			);
 			path = 37_interview_autorelesaepool;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0323DA212625D71000350B69 /* Person.m in Sources */,
 				0323DA182625D68900350B69 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +245,7 @@
 		0323DA1C2625D68900350B69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -247,6 +254,7 @@
 		0323DA1D2625D68900350B69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

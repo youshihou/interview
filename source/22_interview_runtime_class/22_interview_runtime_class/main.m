@@ -29,6 +29,12 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"%d", [Person isKindOfClass:object_getClass([Person class])]); // 1
         NSLog(@"%d", [Person isMemberOfClass:object_getClass([NSObject class])]); // 0
+        
+//        NSMutableString *str = [[NSMutableString alloc] initWithString:@"666"];
+//        Person *p = [[Person alloc] init];
+//        p.text = str;
+//        [str appendString:@"123"];
+//        NSLog(@"%@-%@", str, p.text);
     }
     return 0;
 }
